@@ -2,7 +2,7 @@ num = int(input())
 up = []
 down = []
 
-for i in range(1, 100):
+for i in range(1, 10000001):
     if i % 2 == 0:
         # 짝수일 경우
         up += [j for j in range(1, i+1)]
