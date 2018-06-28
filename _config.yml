@@ -1,2 +1,31 @@
-theme: jekyll-theme-cayman
-title: algorithm:P
+remote_theme: chesterhow/tale
+
+# Site settings
+title:          sunho-algorithm
+description:    "Algorithm problems that I solved"
+url:            "https://sssunho.github.io/algorithm"
+
+# Author
+author:
+  name:         Sunho Lee
+  url:          https://github.com/sssunho
+  email:        sssunho.lee@gmail.com
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-paginate
+  # - jemoji #Uncomment this to allow emoji in your post
+  - jekyll-remote-theme
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
