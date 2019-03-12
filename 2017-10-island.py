@@ -1,3 +1,4 @@
+# https://sssunho.tistory.com/44?category=627982
 import subprocess
 from subprocess import PIPE
 from bs4 import BeautifulSoup as BS
