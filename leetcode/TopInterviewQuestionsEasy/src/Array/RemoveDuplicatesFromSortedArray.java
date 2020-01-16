@@ -4,10 +4,12 @@
 package Array;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class RemoveDuplicatesFromSortedArray {
-    public static int solvedByLambda(int[] nums) {
-        return (int) Arrays.stream(nums).distinct().count();
+    public static List<Integer> solvedByLambda(int[] nums) {
+        return Arrays.stream(nums).distinct().boxed().collect(Collectors.toList());
     }
 
     public static int solution(int[] nums) {
