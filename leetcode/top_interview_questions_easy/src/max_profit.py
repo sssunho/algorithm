@@ -15,6 +15,9 @@ class MaxProfit:
 
     @staticmethod
     def solution2(prices: list) -> int:
+        if not prices:
+            return 0
+
         max_profit = 0
         for i in range(len(prices) - 1):
             max_profit += max(prices[i + 1] - prices[i], 0)
@@ -22,6 +25,9 @@ class MaxProfit:
 
     @staticmethod
     def solution3(prices: list) -> int:
+        if not prices:
+            return 0
+
         return sum(
             prices[i + 1] - prices[i]
             for i in range(len(prices) - 1)
